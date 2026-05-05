@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Live Currency Converter | UtilityTools</title>
+  <meta name="description" content="Convert currencies instantly with live mid-market rates. Supports 150+ currencies. Updated daily.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/currency.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "WebApplication", "name": "Currency Converter", "applicationCategory": "FinanceApplication", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header><h1>💱 Currency Converter</h1><nav><a href="index.html">← Home</a></nav></header>
+
+    <div class="tool-card">
+      <div class="input-group">
+        <div><label>Amount</label><input type="number" id="amount" value="100"></div>
+        <div style="display:flex;gap:0.5rem">
+          <select id="from" style="flex:1"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option></select>
+          <select id="to" style="flex:1"><option value="EUR">EUR</option><option value="USD">USD</option><option value="GBP">GBP</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option></select>
+        </div>
+      </div>
+      <button onclick="convertCurrency()">Convert Now</button>
+      <div class="result" id="currencyResult"></div>
+    </div>
+
+    <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></div>
+
+    <section class="faq">
+      <h2>Currency FAQ</h2>
+      <details><summary>Where do exchange rates come from?</summary><p>We use live mid-market rates from European Central Bank data via Frankfurter API. Banks usually add a 2–4% spread to these rates.</p></details>
+      <details><summary>How often are rates updated?</summary><p>Rates refresh every 15 minutes. Historical rates are cached for performance.</p></details>
+    </section>
+
+    <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></div>
+    <footer><p>© 2026 UtilityTools. | <a href="privacy.html">Privacy</a></p></footer>
+  </div>
+  <script src="js/currency.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</body>
+</html>

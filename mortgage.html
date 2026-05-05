@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Mortgage Calculator with Taxes & Insurance | UtilityTools</title>
+  <meta name="description" content="Calculate your monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Free, fast, and mobile-friendly.">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/mortgage.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Mortgage Calculator",
+    "url": "https://YOUR-DOMAIN.com/mortgage.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏠 Mortgage Calculator</h1>
+      <nav><a href="index.html">← Home</a></nav>
+    </header>
+
+    <div class="tool-card">
+      <div class="input-group">
+        <div><label>Home Price ($)</label><input type="number" id="price" value="350000"></div>
+        <div><label>Down Payment ($)</label><input type="number" id="down" value="70000"></div>
+        <div><label>Loan Term (Years)</label><input type="number" id="years" value="30"></div>
+        <div><label>Interest Rate (%)</label><input type="number" id="rate" value="6.5" step="0.01"></div>
+        <div><label>Annual Property Tax ($)</label><input type="number" id="tax" value="3000"></div>
+        <div><label>Annual Home Insurance ($)</label><input type="number" id="insurance" value="1200"></div>
+      </div>
+      <button onclick="calculateMortgage()">Calculate Payment</button>
+      <div class="result" id="mortgageResult"></div>
+    </div>
+
+    <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></div>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>What is PMI and when do I need it?</summary><p>Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home price. It protects the lender and typically costs 0.5%–1% of the loan annually.</p></details>
+      <details><summary>How is the monthly payment calculated?</summary><p>We use the standard amortization formula: M = P[r(1+r)^n]/[(1+r)^n-1], plus your annual taxes and insurance divided by 12.</p></details>
+      <details><summary>Are taxes and insurance included?</summary><p>Yes. Enter your estimated annual property tax and homeowner's insurance to get a realistic monthly payment.</p></details>
+    </section>
+
+    <div class="ad-slot" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></div>
+
+    <footer><p>© 2026 UtilityTools. | <a href="privacy.html">Privacy</a></p></footer>
+  </div>
+  <script src="js/mortgage.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</body>
+</html>
